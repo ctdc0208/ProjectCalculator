@@ -1,7 +1,149 @@
-.head {
-
+body {
+    margin: 0;
 }
 
-#buttons {
-  
+h1.heading {
+    text-align: center;
+    font-family: monospace;
+    font-style: bold;
+    font-size: 2.5em;
+    margin: 10px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+div#table {
+    display: table;
+    margin: auto;
+}
+
+div#row {
+    display: table-row;
+}
+
+div#calculatorWrap {
+    display: table-cell;
+    background: #474747;
+    padding: 4px 8px 8px 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    text-align: center;
+    margin: auto;
+}
+
+button {
+    overflow: visible;
+}
+button, select {
+    text-transform: none;
+}
+button, html input[type="button"], /* 1 */ input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+button[disabled], html input[disabled] {
+    cursor: default;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+border: 0;
+padding: 0;
+}
+input {
+    line-height: normal;
+}
+
+input.window {
+    width: 11.5em;
+    line-height: 2em;
+    border: 1px solid #999;
+    font-size: 1.5em;
+    margin-top: 4px;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: right;
+}
+
+input.transparentbutton {
+    width: 2.72em;
+    line-height: 2.096em;
+    text-align: center;
+    font-weight: bold;
+    color: #444444;
+    background-color: #474747;
+    border: 0px solid #ccc;
+    font-size: 1.5em;
+    margin-top: 4px;
+}
+
+input.button {
+    width: 2.75em;
+    line-height: 2.096em;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border: 1px solid #ccc;
+    font-size: 1.5em;
+    margin-top: 4px;
+}
+
+input.buttonlarge {
+    width: 5.7em;
+    line-height: 2.096em;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    background-color: #f6f6f6;
+    border: 1px solid #ccc;
+    font-size: 1.5em;
+    margin-top: 4px;
+}
+
+input.number {
+    background-color: #f6f6f6;
+    color: #000000;
+    font-weight: bold;
+}
+
+input.operator {
+    /* background-color: #F1C9C7; */
+    background-color: #191970;
+    color: #white;
+    font-weight: bold;
+}
+
+input.operatorequal{
+    /* background-color: #F1C9C7; */
+    background-color: #red;
+    color: #white;
+    font-weight: bold;
+}
+
+input.operatorlarge {
+    width: 2.75em;
+    line-height: 4.192em;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border: 1px solid #ccc;
+    font-size: 1.5em;
+    margin-top: 4px;
+}
+
+input.button:hover {
+    border: 1px solid #999; /*cursor:pointer;*/
+}
+
+input.button:active {
+    background-color: #ccc; /*cursor:pointer;*/
 }

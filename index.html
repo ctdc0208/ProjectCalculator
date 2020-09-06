@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="ProjectCalculator.css">
     <meta charset="utf-8">
-    <title>Calculator</title>
+    <title>ProjectCalculator</title>
   </head>
   <body>
-    <div class = "buttons">
-
+    <header>
+    <h1 class="heading">Basic Calculator</h1>
+    </header>
+    <div id="table">
+    <div id="row">
+      <div id="calculatorWrap">
+        <form action="javascript:void(0);" id="calculator" name="calculator">
+          <div>
+            <label for="display" class="hidden">display only</label>
+            <input type="button" class="window" name="display" id="display" value="">
+          </div>
+          <div>
+            <input class="transparentbutton" disabled></input>
+            <input class="transparentbutton" disabled></input>
+            <input class="transparentbutton" disabled></input>
+            <input type="button" class="button" name="backspace" value="DEL" onclick="display_backspace">
+          </div>
+          <div>
+            <input class="transparentbutton" disabled></input>
+            <input class="transparentbutton" disabled></input>
+            <input type="button" class="button" name="clearButton" value="AC" onclick="display_clear()" title="CE is Clear Entry; AC is Clear All; Press once to clear current entry, press twice to clear all.">
+            <input type="button" class="button operator" name="divide" value="÷" onclick="enterOperator('/')" title="Divide (press /)">
+          </div>
+          <div>
+            <input type="button" class="button number" name="seven" value="7" onclick="enterValue('7')">
+            <input type="button" class="button number" name="eight" value="8" onclick="enterValue('8')">
+            <input type="button" class="button number" name="nine" value="9" onclick="enterValue('9')">
+            <input type="button" class="button operator" name="multiply" value="×" onclick="enterOperator('*')" title="Multiply (press ×)">
+          </div>
+          <div>
+            <input type="button" class="button number" name="four" value="4" onclick="enterValue('4')">
+            <input type="button" class="button number" name="five" value="5" onclick="enterValue('5')">
+            <input type="button" class="button number" name="six" value="6" onclick="enterValue('6')">
+            <input type="button" class="button operator" name="subtract" value="−" onclick="enterOperator('-')" title="Subtract (press -)">
+          </div>
+          <div>
+            <input type="button" class="button number" name="one" value="1" onclick="enterValue('1')">
+            <input type="button" class="button number" name="two" value="2" onclick="enterValue('2')">
+            <input type="button" class="button number" name="three" value="3" onclick="enterValue('3')">
+            <input type="button" class="button operator" name="add" value="+" onclick="enterOperator('+')" title="Add (press +)">
+          </div>
+          <div>
+            <input type="button" class="buttonlarge" name="zero" value="0" onclick="enterValue('0')">
+            <input type="button" class="button number" name="decimal" value="." onclick="enterValue('.')">
+            <input type="button" class="button operatorequal" name="calculate" value="=" onclick="enterOperator('=')" title="Execute calculation (press =)">
+          </div>
+      </div>
     </div>
-
+  </div>
   </body>
 
-
-
-  <script src="ProjectCalculator.js" charset="utf-8"></script>
+<script src="ProjectCalculator.js"></script>
 </html>
