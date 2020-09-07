@@ -59,16 +59,6 @@ function display_clear(){
   (Value="",displayValue(Value)))
 }
 
-function memory_plus(){
-  ""!=document.calculator.display.value&&(a=parseFloat(document.calculator.memory.value),
-  b=parseFloat(document.calculator.display.value),t=a+b,document.calculator.memory.value=t)
-}
-
-function memory_minus(){
-  ""!=document.calculator.display.value&&(a=parseFloat(document.calculator.memory.value),
-  b=parseFloat(document.calculator.display.value),t=a-b,document.calculator.memory.value=t)
-}
-
 function resetFlags(){
   is_Executed=is_Method=is_Constant=is_Operator=is_Decimal=is_Number=!1
 }
