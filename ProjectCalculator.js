@@ -125,4 +125,6 @@ function checkKeyPressed(c){
     break;
     case 27:case 46:case 12:display_clear();
     break;
-    case 8:display_backspace()}c.preventDefault()};
+    case 8:display_backspace()}
+    c.preventDefault()
+  };
